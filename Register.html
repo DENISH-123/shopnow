@@ -1,0 +1,42 @@
+<html lang="">
+    <head>
+        <title>Register page</title>
+        <link rel="stylesheet" type="text/css" href="Register.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="Register.php" method="GET"> 
+                <p>First Name:</p>
+                <input type="text" name="firstname" placeholder="Enter First Name" required>
+                <p>Last Name:</p>
+                <input type="text" name="lastname" placeholder="Enter Last Name" required>
+                <p>Email:</p>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <p>Gender:</p><br>
+                <label class="radio">
+                    <input type="radio" value="male" name="gender" required>
+                    <span class="checkmark"></span>
+                    Male
+                </label>
+                <label class="radio">
+                    <input type="radio" value="female"name="gender" required>Female
+                </label>
+                <p>Phone No.:</p>
+                <select class="pC" nane="phoneCode" required>
+                    <option selected hidden value="">Select Code</option>
+                    <option value="091">091</option>
+                    <option value="045">045</option>
+                    <option value="034">034</option>
+                    <option value="090">090</option>
+                    <option value="056">056</option>
+                </select>
+                <input type="phone" name="phone" placeholder="Enter Phone Number" required>
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password" required><br>
+                <input type="submit" name="submit"><br>
+                <input type="reset"><br>
+                <a href="login.html">Login Here.....</a>    
+            </form> 
+        </div>
+    </body>
+</html>
